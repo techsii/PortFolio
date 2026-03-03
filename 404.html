@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Neel Bhattacharjee</title>
+    <meta name="description" content="Oops! The page you're looking for doesn't exist. Let's get you back on track.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* 404 Specific Styles */
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .error-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+        }
+        
+        .error-shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(40px);
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .error-shape-1 {
+            width: 300px;
+            height: 300px;
+            background: var(--accent-primary);
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .error-shape-2 {
+            width: 400px;
+            height: 400px;
+            background: var(--accent-tertiary);
+            top: 60%;
+            right: 10%;
+            animation-delay: 3s;
+        }
+        
+        .error-content {
+            max-width: 800px;
+            padding: 0 2rem;
+            z-index: 1;
+        }
+        
+        .error-code {
+            font-size: 12rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+        }
+        
+        .error-title {
+            font-size: var(--font-size-5xl);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.4s forwards;
+        }
+        
+        .error-message {
+            font-size: var(--font-size-xl);
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.6s forwards;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.8s forwards;
+        }
+        
+        .btn-home {
+            background: transparent;
+            border: 2px solid var(--accent-primary);
+            color: var(--accent-primary);
+        }
+        
+        .btn-home:hover {
+            background: var(--accent-primary);
+            color: white;
+        }
+        
+        .btn-portfolio {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
+            color: white;
+        }
+        
+        .btn-portfolio:hover {
+            transform: translateY(-2px);
+        }
+        
+        .error-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--accent-primary);
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: var(--font-size-3xl);
+            }
+            
+            .error-message {
+                font-size: var(--font-size-lg);
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .error-code {
+                font-size: 4rem;
+            }
+            
+            .error-title {
+                font-size: var(--font-size-2xl);
+            }
+            
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <!-- Background Shapes -->
+        <div class="error-bg">
+            <div class="error-shape error-shape-1"></div>
+            <div class="error-shape error-shape-2"></div>
+        </div>
+        
+        <!-- Particles -->
+        <div class="error-particles" id="errorParticles"></div>
+        
+        <!-- Error Content -->
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Oops! Page Not Found</h1>
+            <p class="error-message">
+                Looks like you've wandered off the beaten path. Don't worry, 
+                even the best developers get lost sometimes. Let's get you back on track!
+            </p>
+            <div class="error-actions">
+                <a href="index.html" class="btn btn-outline btn-home">
+                    <i class="fas fa-home"></i> Go Home
+                </a>
+                <a href="index.html#projects" class="btn btn-primary btn-portfolio">
+                    <i class="fas fa-laptop-code"></i> View Portfolio
+                </a>
+                <a href="index.html#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const container = document.getElementById('errorParticles');
+            const particleCount = 20;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animation = `float ${Math.random() * 3 + 2}s linear infinite`;
+                particle.style.opacity = Math.random() * 0.5 + 0.1;
+                container.appendChild(particle);
+            }
+        }
+        
+        // Add floating animation to particles
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float {
+                0% { transform: translateY(0) rotate(0deg); }
+                50% { transform: translateY(-20px) rotate(180deg); }
+                100% { transform: translateY(0) rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            
+            // Add some interactive elements
+            const particles = document.querySelectorAll('.particle');
+            particles.forEach(particle => {
+                particle.addEventListener('mouseenter', () => {
+                    particle.style.transform = 'scale(2)';
+                    particle.style.opacity = '1';
+                });
+                
+                particle.addEventListener('mouseleave', () => {
+                    particle.style.transform = 'scale(1)';
+                    particle.style.opacity = Math.random() * 0.5 + 0.1;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

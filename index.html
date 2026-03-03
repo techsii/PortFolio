@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndraNeel Bhattacharjee - Full Stack Developer</title>
+    <meta name="description" content="Professional portfolio of Neel Bhattacharjee - Full Stack Developer specializing in real-time applications and modern web experiences">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Neel</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="highlight">IndraNeel Bhattacharjee</span>
+                        </h1>
+                        <p class="hero-subtitle">Full Stack Developer</p>
+                        <p class="hero-description">
+                            I build scalable real-time applications and modern web experiences.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                            <a href="Neel CV.pdf" download class="btn btn-secondary">Download Resume</a>
+                        </div>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/techsii" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/indraneel-bhattacharjee-61b469240" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:indraneelbhattacharjee05@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-circle">
+                        <div class="profile-img"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bg">
+                <div class="bg-shape bg-shape-1"></div>
+                <div class="bg-shape bg-shape-2"></div>
+                <div class="bg-shape bg-shape-3"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Professional Summary</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="about-img-circle">
+                            <div class="about-img"></div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate Full Stack Developer with expertise in building scalable real-time applications 
+                            and modern web experiences. My focus is on creating efficient, user-friendly solutions that solve 
+                            real-world problems.
+                        </p>
+                        <p>
+                            Specialized in JavaScript ecosystem, I have hands-on experience with React, Node.js, and modern 
+                            development practices. I'm committed to writing clean, maintainable code and staying updated with 
+                            the latest industry trends.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <h3>20+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>3+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>100%</h3>
+                                <p>Client Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Project Section -->
+        <section id="featured-project" class="section featured-project">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Project</h2>
+                    <p class="section-subtitle">Case Study</p>
+                </div>
+                <div class="project-card featured animate-in">
+                    <div class="project-image">
+                        <img src="Techno-connect.png" alt="TechnoConnect platform screenshot" />
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">TechnoConnect</h3>
+                            <p class="project-type">Discord-based Peer Learning Platform</p>
+                        </div>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <h4>Problem</h4>
+                                <p>Students struggle to find study partners and get real-time help in their learning journey.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Solution</h4>
+                                <p>A Discord bot that connects students based on subjects, skill levels, and availability for peer-to-peer learning.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Technologies Used</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Discord.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Express</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Smart matching algorithm for study partners</li>
+                                    <li>Real-time availability tracking</li>
+                                    <li>Subject-based channel organization</li>
+                                    <li>Progress tracking and analytics</li>
+                                </ul>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Challenges Solved</h4>
+                                <p>Implemented real-time communication, database optimization for large user base, and seamless Discord integration.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Impact</h4>
+                                <p>Helped 500+ students find study partners, reducing study time by 40% and improving learning outcomes.</p>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://techno-connect.vercel.app/" class="btn btn-primary">Live Demo</a>
+                            <a href="https://github.com/tusar-003/Techno-Connect" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-subtitle">Recent Work</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="bak-bak.png" alt="Bak Bak chat application screenshot" />
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3>Bak Bak</h3>
+                                    <p>Real-time Chat Application</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Bak Bak</h3>
+                            <p class="project-desc">A real-time chat application with modern UI and seamless messaging experience.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://bak-bak.netlify.app/" class="project-link">Live Demo</a>
+                                <a href="https://github.com/techsii/bak-bak" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Gym.png" alt="Gym Fitness landing page screenshot" />
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3>Gym Fitness</h3>
+                                    <p>Landing Page Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Gym Fitness Landing Page</h3>
+                            <p class="project-desc">Modern, responsive landing page for fitness center with smooth animations.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">GSAP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://elitefit-gym-co.netlify.app/" class="project-link">Live Demo</a>
+                                <a href="https://github.com/techsii/elitefit-gym" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Portfolio.png" alt="Online Complaint Portal screenshot" />
+                            <div class="project-img-placeholder"></div>
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3>Portfolio Website</h3>
+                                    <p>Personal Portfolio</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Personal Portfolio</h3>
+                            <p class="project-desc">This very portfolio website showcasing skills and projects with modern design.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">EmailJS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://techsii-github-io.vercel.app/" class="project-link">Live Demo</a>
+                                <a href="" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Online Complaint.png" alt="Online Complaint Portal screenshot" />
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <h3>Online Complaint Portal</h3>
+                                    <p>Secure FIR &amp; Geo‑tagging System</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Online Complaint Portal</h3>
+                            <p class="project-desc">Web application for filing and tracking complaints with geo‑tagging.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://complaint-gov.vercel.app/" class="project-link">Live Demo</a>
+                                <a href="https://github.com/techsii/techsii.github.io/tree/master/complaint%20portal" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills</h2>
+                    <p class="section-subtitle">Technical Expertise</p>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Frontend</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">HTML</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">CSS</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">JavaScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">React</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Backend</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">Node.js</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Express</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Database</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">MongoDB</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Firebase</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Tools</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">VS Code</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-icons">
+                        <div class="tech-icon-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <i class="fab fa-node"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-icon-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">Academic Journey</p>
+                </div>
+                <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="education-item-header">
+                                    <div class="education-logo">
+                                        <img src="Techno India University.jpg" alt="Techno India University Logo">
+                                    </div>
+                                    <div class="education-text">
+                                        <h3>Master of Computer Application</h3>
+                                        <h4>Techno India University</h4>
+                                        <p class="timeline-date">Aug 2024 – Present</p>
+                                    </div>
+                                </div>
+                                <p class="timeline-desc">Currently pursuing MCA with a strong focus on software development, algorithms, and modern technologies. Achieved 8.95 SGPA in the Third semester.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="education-item-header">
+                                    <div class="education-logo">
+                                        <img src="svims.jpg" alt="SVIMS Logo">
+                                    </div>
+                                    <div class="education-text">
+                                        <h3>Bachelor of Computer Application</h3>
+                                        <h4>Swami Vivekananda Institute of Modern Studies</h4>
+                                        <p class="timeline-date">2021 - 2024</p>
+                                    </div>
+                                </div>
+                                <p class="timeline-desc">Completed BCA with comprehensive knowledge in programming languages, database management, and web technologies. Built a strong foundation in computer science principles.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="education-item-header">
+                                    <div class="education-logo">
+                                        <img src="Nios Logo Vector.svg .png" alt="NIOS Logo">
+                                    </div>
+                                    <div class="education-text">
+                                        <h3>Higher Secondary Education</h3>
+                                        <h4>CBSE Board</h4>
+                                        <p class="timeline-date">2018 - 2020</p>
+                                    </div>
+                                </div>
+                                <p class="timeline-desc">Completed 12th grade with Science stream, focusing on Mathematics and Computer Science. Developed analytical thinking and problem-solving skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-subtitle">Professional Journey</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Frontend Developer Intern</h3>
+                            <h4>Suven Consultants & Technology Pvt Ltd</h4>
+                            <p class="timeline-date">2021 - 2023</p>
+                            <p class="timeline-desc">Developed responsive web applications using modern frontend technologies. Collaborated with cross-functional teams to deliver high-quality user interfaces.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Web Developer Intern</h3>
+                            <h4>Oasis Infobyte</h4>
+                            <p class="timeline-date">2023 - 2024</p>
+                            <p class="timeline-desc">Worked on full-stack web development projects. Gained experience in both frontend and backend technologies while contributing to real-world applications.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>HTML Developer</h3>
+                            <h4>Freelance</h4>
+                            <p class="timeline-date">2021 - 2023</p>
+                            <p class="timeline-desc">Created responsive websites and optimized content for user engagement. Applied SEO best practices and modern web standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's Work Together</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>indraneelbhattacharjee05@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 7070882198</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Jharkhand, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="footer-logo-text">Neel</span>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/techsii" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/indraneel-bhattacharjee-61b469240" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                        <a href="mailto:indraneelbhattacharjee05@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Neel Bhattacharjee. Built with ❤️</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

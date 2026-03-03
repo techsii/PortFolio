@@ -1,0 +1,124 @@
+.headline h3{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.headline p{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 1px;
+    color: grey;
+    
+}
+ .third-main .basic-box{
+    padding-left: 20%;
+}
+.basic-box .text-id{
+    width: 400px;
+    height: 65px;
+    border-radius: 8px;
+    margin: 5px 2px;
+    background-color: beige;
+}
+.basic-box .text-email{
+    width: 400px;
+    height: 65px;
+    border-radius: 8px;
+    margin: 5px 2px;
+    background-color: beige;
+}
+.basic-box .text-project{
+    width: 400px;
+    height: 65px;
+    border-radius: 8px;
+    margin: 5px 2px;
+    background-color: rgb(234, 234, 206);
+}
+.basic-box .text-mesg{
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 5px 2px;
+    background-color: rgb(235, 235, 204);
+}
+.basic-box .btn2 {
+    margin: 10px 0 20px 5px;
+    width: 150px;
+    height: 45px;
+    background-color: rgba(137, 23, 168, 0.903);
+    color: aliceblue;
+    border-radius: 10px; 
+}
+.basic-box .btn2:hover {
+    border-radius: 15px 10px;
+    border: 2px solid whitesmoke; 
+}
+::placeholder{
+ text-indent: 20px;    
+ color: black;
+ font-size: 15px;
+ padding-top: 10px;
+}
+.third-main {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;        
+  }
+  .left-box {
+    flex: 1; 
+    padding: 50px; 
+  }
+  
+  .right-box {
+    flex: 1; 
+    padding: 50px; 
+  }
+  
+  .basic-box {
+    margin-bottom: 10px; 
+  }  
+
+.left-box {
+  display: flex;
+  flex-direction: column; 
+ 
+}
+
+.contact-logo,
+.Email-logo,
+.location-logo {
+  display: flex;
+  align-items: center;
+  margin : 20px 0 10px 0;
+}
+
+.contact-logo img,
+.Email-logo img,
+.location-logo img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.contact-info {
+  flex-grow: 1; 
+}
+.contact-info h2,
+.contact-info p {
+  margin: 0;
+}
+
+.Fourth-logo img
+{
+    width: 30px;
+    margin-left: 2px;
+}
+ .arrow img{
+    width: 40px;
+    position: relative; 
+    top: -100px; 
+    left: 95%; 
+}
