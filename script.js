@@ -302,8 +302,8 @@ class ScrollAnimations {
             });
         }, options);
         
-        // Observe all sections
-        document.querySelectorAll('.section, .project-card').forEach(el => {
+        // Observe all sections and card types
+        document.querySelectorAll('.section, .project-card, .service-card, .certification-card, .achievement-card, .skill-block').forEach(el => {
             this.observer.observe(el);
         });
     }
